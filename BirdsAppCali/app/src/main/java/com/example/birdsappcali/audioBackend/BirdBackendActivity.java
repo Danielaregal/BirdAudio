@@ -50,8 +50,8 @@ public class BirdBackendActivity extends AudioFrontendActivity {
         super.startRecording(view);
 
         TensorAudio.TensorAudioFormat format = audioClassifier.getRequiredTensorAudioFormat();
-        String specs = "Number of channels: " + format.getChannels() + "\n"
-                + "Sample Rate: " + format.getSampleRate();
+        String specs = "Número de Canales: " + format.getChannels() + "\n"
+                + "Frecuencia de Muestreo: " + format.getSampleRate();
         specsTextView.setText(specs);
 
         audioRecord = audioClassifier.createAudioRecord();
